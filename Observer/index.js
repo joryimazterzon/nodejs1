@@ -4,10 +4,10 @@ require('./listener/statsListener');
 const registerUser = require('./userRegistration');
 const createPost = require('./userPost');
 
-const user1 = { name: 'John Doe', email: 'john.doe@example.com' };
-const user2 = { name: 'Jane Doe', email: 'jane.doe@example.com' };
+const user1 = { name: 'Juan Perez', email: 'juan.perez@example.com' };
+const user2 = { name: 'Maria Garcia', email: 'maria.garcia@example.com' };
 
 registerUser(user1);
 registerUser(user2);
 
-createPost({ title: 'Hello World', content: 'This is a test post' });
+createPost(user2, { title: 'Hello World', content: 'This is a test post' });
